@@ -1,8 +1,14 @@
 import React from 'react'
-
+import Navbar from '../components/navbar'
+import Hero from '../components/hero'
+import AiTools from '../components/AiTools'
 const Home = () => {
   return (
-    <div>Home</div>
+    <div>
+      <Navbar/>
+      <Hero/>
+      <AiTools/>
+    </div>
   )
 }
 

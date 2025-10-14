@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter , Routes,Route} from 'react-router-dom'
+import {  Routes,Route} from 'react-router-dom'
 import Home from './pages/Home'
 import Layout from './pages/Layout'
 import ResumeReview from './pages/ResumeReview'
@@ -13,8 +13,8 @@ import ObjectRemover from './pages/ObjectRemover'
 
 const App = () => {
   return (
-    <BrowserRouter>
-        <div >
+    // <BrowserRouter>
+        // <div >
           <Routes>
 
             <Route path="/" element={<Home/>}  />  
@@ -34,8 +34,8 @@ const App = () => {
             </Route>
             
           </Routes>
-        </div>
-    </BrowserRouter>
+        // </div>
+    // </BrowserRouter>
 
 
   )
