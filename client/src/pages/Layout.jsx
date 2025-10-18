@@ -4,14 +4,15 @@ import { assets } from '../assets/assets'
 import { useNavigate } from 'react-router-dom'
 import { Menu, X } from 'lucide-react'
 import Sidebar from '../components/Sidebar'
+import {  useUser ,SignIn} from '@clerk/clerk-react'
 const Layout = () => {
   
   const navigate=useNavigate();
   const [sidebar, setsidebar] = useState(false)
-
-
-
+  const {user}=useUser();
+  
   return (
+    user?  
     <div>
         
         <nav>
@@ -32,7 +33,10 @@ const Layout = () => {
         
         </div>
 
-    </div>
+    </div>:
+   <div className='h-screen w-screen flex items-center justify-center '>
+      <SignIn/>
+   </div> 
   )
 }
 

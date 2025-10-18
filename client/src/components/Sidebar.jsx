@@ -17,7 +17,7 @@ const Sidebar = ({sidebar,setSidebar}) => {
 
 
     return (
-        user?
+
         <div className={`w-60 bg-white border-r border-gray-200 flex flex-col justify-between items-center max-sm:absolute top-14 bottom-0 ${sidebar?'translate-x-0':'max-sm:-translate-x-full'} transition-all duration-300 ease-in-out`}>
             
             <div className='my-7 w-full'>
@@ -52,8 +52,7 @@ const Sidebar = ({sidebar,setSidebar}) => {
                 </div>
                 <LogOut onClick={signOut} className='w-4.5 text-gray-500 hover:text-gray-700 transition cursor-pointer '/>
             </div>
-        </div>:
-        <SignIn/>
+        </div>
     
 
     )
