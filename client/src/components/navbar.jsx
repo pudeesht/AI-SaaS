@@ -19,13 +19,21 @@ const Navbar = () => {
     <div  className='fixed z-10 w-full h-25 backdrop-blur-2xl flex justify-between items-center py-3 px-4 sm:px-20 xl:px-32 '>
         
         <img src={assets.logo} alt="Site Logo"  className='w-32 sm:w-44'    onClick={()=>navigate('/')} />
+        
+        
+        <div className='flex items-center gap-4'>
 
-        {user?
-          <UserButton/>
-          :
-          <button onClick={openSignIn} className='flex items-center gap-2 rounded-full text-sm cursor-pointer bg-primary text-white px-10 py-2.5'>Get Started <ArrowRight className="w-4 h-4"/></button>
-      
-        }
+            {user && <button onClick={()=>navigate("/ai/")} className='flex items-center gap-2 rounded-full text-sm cursor-pointer bg-primary text-white px-3 py-2.5'>Dashboard </button>}
+
+            {user?
+              <UserButton/>
+              :
+              <button onClick={openSignIn} className='flex items-center gap-2 rounded-full text-sm cursor-pointer bg-primary text-white px-10 py-2.5'>Get Started <ArrowRight className="w-4 h-4"/></button>
+          
+            }
+
+        </div>
+        
 
 
     </div>
