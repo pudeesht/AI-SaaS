@@ -18,17 +18,17 @@ const App = () => {
           <Routes>
 
             <Route path="/" element={<Home/>}  />  
+            <Route path="/resume-review" element={<ResumeReview/>}  />
+            <Route path="/article-writer" element={<ArticleWriter/>}  />
+            <Route path="/background-remover" element={<BackgroundRemover/>}  />
+            <Route path="/blog-title-generator" element={<BlogTitleGenerator/>}  />
+            <Route path="/image-generator" element={<ImageGenerator/>}  />
+            <Route path="/object-remover" element={<ObjectRemover/>}  />   
 
             <Route path="/ai" element={<Layout/>}  >
               
               <Route index element={<Dashboard/>}  />
-              <Route path="resume-review" element={<ResumeReview/>}  />
-              <Route path="article-writer" element={<ArticleWriter/>}  />
-              <Route path="background-remover" element={<BackgroundRemover/>}  />
-              <Route path="blog-title-generator" element={<BlogTitleGenerator/>}  />
               <Route path="community" element={<Community/>}  />
-              <Route path="image-generator" element={<ImageGenerator/>}  />
-              <Route path="object-remover" element={<ObjectRemover/>}  />   
             
             
             </Route>
