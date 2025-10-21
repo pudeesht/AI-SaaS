@@ -25,7 +25,8 @@ const ArticleWriter = () => {
 
 
   return (
-    <div className="h-full p-6 flex justify-center items-start flex-wrap gap-4 text-slate-700">
+
+    <div className="h-full p-6 flex justify-center items-start flex-wrap gap-4  text-slate-700">
       <nav className="w-full px-8 min-h-14 flex items-center justify-between border-b border-gray-200 ">
         <img
           className="cursor-pointer w-32 sm:w-44"
@@ -104,6 +105,8 @@ const ArticleWriter = () => {
         )}
       </div>
     </div>
+
+    
   );
 };
 
